@@ -74,16 +74,23 @@ Source code lives under `src/duckdb_demo/`. Follow the existing src layout -- do
 - Demonstrate reading directly from CSV/Parquet/JSON files (DuckDB's native file scanning) -- this is a key differentiator
 - When showing pandas/polars interop, make it clear which library is doing the work
 
-## Example Topics to Cover
+## Skills Roadmap
 
-- Creating tables and inserting data
-- Querying CSV, Parquet, and JSON files directly (no loading step)
-- Aggregations, window functions, CTEs
-- Joining multiple data sources (e.g., CSV + Parquet)
-- Exporting results to Parquet/CSV
-- Using DuckDB with pandas DataFrames and polars DataFrames
-- Parameterized queries
-- Python UDFs in DuckDB
+The full learning roadmap lives in `.claude/skills/duckdb-learning/SKILL.md`.
+It defines **8 tracks / 42 skills**, each mapped to an example script:
+
+1. **Foundations** -- connect, read CSV/Excel/Parquet/JSON, create tables
+2. **Core SQL** -- filtering, aggregations, JOINs, CTEs, CASE, set operations
+3. **Intermediate SQL** -- window functions, dates, strings, PIVOT, QUALIFY
+4. **Data I/O & Export** -- COPY TO, globs, Hive partitioning, httpfs, ATTACH
+5. **Python Interop** -- pandas, polars, pyarrow, Relational API, UDFs
+6. **Advanced SQL** -- nested types, JSON, recursive CTEs, ASOF, FTS
+7. **Visualization** -- matplotlib, plotly, seaborn, chart-ready data
+8. **Real-World Patterns** -- ETL, data quality, dedup, synthetic data, profiling
+
+When adding a new example, consult the skill file for the template, naming
+convention (`NN_skill_name.py`), and section-building guidelines.  Update
+the progress tracker in the skill file when an example is completed.
 
 ## Running
 
