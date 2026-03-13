@@ -1,0 +1,81 @@
+# https://taskfile.dev
+version: "3"
+
+vars:
+  SRC: src/ examples/
+
+tasks:
+  # ---------- Meta ----------
+  default:
+    desc: List available tasks
+    cmds:
+      - task --list-all
+
+  # ---------- Quality ----------
+  fmt:
+    desc: Auto-format code with ruff
+    cmds:
+      - uvx ruff format {{.SRC}}
+
+  fmt:check:
+    desc: Check formatting without modifying files
+    cmds:
+      - uvx ruff format --check {{.SRC}}
+
+  lint:
+    desc: Run ruff linter (auto-fix)
+    cmds:
+      - uvx ruff check --fix {{.SRC}}
+
+  lint:check:
+    desc: Run ruff linter (check only, no fixes)
+    cmds:
+      - uvx ruff check {{.SRC}}
+
+  typecheck:
+    desc: Run ty type checker
+    cmds:
+      - uvx ty check
+
+  check:
+    desc: Run all quality checks (lint, format, type-check)
+    cmds:
+      - task: lint:check
+      - task: fmt:check
+      - task: typecheck
+
+  fix:
+    desc: Auto-fix lint issues and reformat
+    cmds:
+      - task: lint
+      - task: fmt
+
+  # ---------- Run ----------
+  run:
+    desc: Run the main DuckDB demo (auto-fixes lint/format first)
+    deps: [fix]
+    cmds:
+      - uv run python -m duckdb_demo.main
+
+  run:example:
+    desc: "Run a standalone example (usage: task run:example -- <script>.py)"
+    cmds:
+      - uv run python examples/{{.CLI_ARGS}}
+
+  # ---------- Test ----------
+  test:
+    desc: Run tests with pytest
+    cmds:
+      - uv run pytest {{.CLI_ARGS}}
+
+  # ---------- Project ----------
+  sync:
+    desc: Install / update dependencies from the lockfile
+    cmds:
+      - uv sync
+
+  clean:
+    desc: Remove build artifacts and caches
+    cmds:
+      - rm -rf .venv __pycache__ .pytest_cache .ruff_cache dist build
+      - find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
