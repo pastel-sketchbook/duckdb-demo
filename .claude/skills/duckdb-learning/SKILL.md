@@ -180,10 +180,10 @@ Query with DuckDB, chart with Python.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 71 | matplotlib bar & line charts | `71_matplotlib_charts.py` | `.df()` to pandas, `plt.bar()`, `plt.plot()`, `plt.savefig()` |
-| 72 | plotly interactive charts | `72_plotly_charts.py` | `plotly.express`, `.df()`, interactive HTML output, `fig.write_html()` |
-| 73 | seaborn statistical plots | `73_seaborn_plots.py` | `sns.barplot()`, `sns.heatmap()`, `.df()` for seaborn integration |
-| 74 | Chart-ready data with PIVOT | `74_chart_ready_data.py` | `PIVOT` for wide-format, `UNPIVOT` for long-format, export for BI tools |
+| 71 | matplotlib bar & line charts | `71_matplotlib_charts.py` [DONE] | `.df()` to pandas, `plt.bar()`, `plt.plot()`, `plt.savefig()`, paper-tinted styling |
+| 72 | plotly interactive charts | `72_plotly_charts.py` [DONE] | `plotly.express`, `.df()`, interactive HTML output, `fig.write_html()`, warm theming |
+| 73 | seaborn statistical plots | `73_seaborn_plots.py` [DONE] | `sns.barplot()`, `sns.heatmap()`, `.df()`, `sns.set_theme()` custom styling |
+| 74 | Chart-ready data with PIVOT | `74_chart_ready_data.py` [DONE] | `PIVOT` for wide-format, `UNPIVOT` for long-format, export for BI tools |
 
 ### How to build a Visualization example
 
@@ -291,8 +291,8 @@ Track 3 - Intermediate SQL ..... [6/6]  ██████████
 Track 4 - Data I/O & Export .... [5/5]  ██████████
 Track 5 - Python Interop ....... [5/5]  ██████████
 Track 6 - Advanced SQL ......... [6/6]  ██████████
-Track 7 - Visualization ........ [0/4]  ░░░░░░░░░░
+Track 7 - Visualization ........ [4/4]  ██████████
 Track 8 - Real-World Patterns .. [0/5]  ░░░░░░░░░░
                                   ─────
-                          Total  33/42
+                          Total  37/42
 ```
