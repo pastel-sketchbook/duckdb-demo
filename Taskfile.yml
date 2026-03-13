@@ -121,6 +121,17 @@ tasks:
     cmds:
       - uv run pytest {{.CLI_ARGS}}
 
+  # ---------- Stats ----------
+  loc:
+    desc: Lines-of-code summary (tokei)
+    cmds:
+      - tokei src/ examples/ docs/
+
+  loc:file:
+    desc: Per-file lines-of-code breakdown (tokei)
+    cmds:
+      - tokei src/ examples/ docs/ --files
+
   # ---------- Project ----------
   sync:
     desc: Install / update dependencies from the lockfile

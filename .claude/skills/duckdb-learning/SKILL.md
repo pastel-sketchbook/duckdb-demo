@@ -154,12 +154,12 @@ Nested data, full-text search, and DuckDB-specific power features.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 61 | Nested types: STRUCT, LIST, MAP | `61_nested_types.py` | `STRUCT`, `LIST`, `MAP`, `unnest()`, struct access with dot notation |
-| 62 | JSON processing | `62_json_processing.py` | `json_extract`, `json_structure`, `json_transform`, `json_keys`, JSON type |
-| 63 | Recursive CTEs | `63_recursive_ctes.py` | `WITH RECURSIVE`, tree traversal, graph walks, hierarchy flattening |
-| 64 | ASOF joins | `64_asof_joins.py` | `ASOF JOIN ... ON ... AND`, time-series alignment, nearest-match joins |
-| 65 | GROUPING SETS | `65_grouping_sets.py` | `GROUPING SETS`, `ROLLUP`, `CUBE`, `GROUPING()` function, subtotals |
-| 66 | Full-text search | `66_full_text_search.py` | `fts` extension, `PRAGMA create_fts_index`, `fts_main_docs.match_bm25()` |
+| 61 | Nested types: STRUCT, LIST, MAP | `61_nested_types.py` [DONE] | `STRUCT`, `LIST`, `MAP`, `unnest()`, struct access with dot notation |
+| 62 | JSON processing | `62_json_processing.py` [DONE] | `json_extract`, `json_structure`, `json_transform`, `json_keys`, JSON type |
+| 63 | Recursive CTEs | `63_recursive_ctes.py` [DONE] | `WITH RECURSIVE`, tree traversal, graph walks, hierarchy flattening |
+| 64 | ASOF joins | `64_asof_joins.py` [DONE] | `ASOF JOIN ... ON ... AND`, time-series alignment, nearest-match joins |
+| 65 | GROUPING SETS | `65_grouping_sets.py` [DONE] | `GROUPING SETS`, `ROLLUP`, `CUBE`, `GROUPING()` function, subtotals |
+| 66 | Full-text search | `66_full_text_search.py` [DONE] | `fts` extension, `PRAGMA create_fts_index`, `fts_main_docs.match_bm25()` |
 
 ### How to build an Advanced SQL example
 
@@ -290,9 +290,9 @@ Track 2 - Core SQL ............. [6/6]  ██████████
 Track 3 - Intermediate SQL ..... [6/6]  ██████████
 Track 4 - Data I/O & Export .... [5/5]  ██████████
 Track 5 - Python Interop ....... [5/5]  ██████████
-Track 6 - Advanced SQL ......... [0/6]  ░░░░░░░░░░
+Track 6 - Advanced SQL ......... [6/6]  ██████████
 Track 7 - Visualization ........ [0/4]  ░░░░░░░░░░
 Track 8 - Real-World Patterns .. [0/5]  ░░░░░░░░░░
                                   ─────
-                          Total  27/42
+                          Total  33/42
 ```
