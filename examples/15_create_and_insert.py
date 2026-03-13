@@ -7,7 +7,7 @@ Demonstrates how to:
   4. Inspect table structure with DESCRIBE and SHOW TABLES
 
 Run with:
-    task run:example -- 05_create_and_insert.py
+    uv run python examples/15_create_and_insert.py
 """
 
 from __future__ import annotations

@@ -62,6 +62,59 @@ tasks:
     cmds:
       - uv run python examples/{{.CLI_ARGS}}
 
+  # ---------- Tracks ----------
+  run:track1:
+    desc: "Run all Track 1 — Foundations examples"
+    cmds:
+      - for f in examples/1*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track2:
+    desc: "Run all Track 2 — Core SQL examples"
+    cmds:
+      - for f in examples/2*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track3:
+    desc: "Run all Track 3 — Intermediate SQL examples"
+    cmds:
+      - for f in examples/3*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track4:
+    desc: "Run all Track 4 — Data I/O & Export examples"
+    cmds:
+      - for f in examples/4*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track5:
+    desc: "Run all Track 5 — Python Interop examples"
+    cmds:
+      - for f in examples/5*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track6:
+    desc: "Run all Track 6 — Advanced SQL examples"
+    cmds:
+      - for f in examples/6*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track7:
+    desc: "Run all Track 7 — Visualization examples"
+    cmds:
+      - for f in examples/7*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:track8:
+    desc: "Run all Track 8 — Real-World Patterns examples"
+    cmds:
+      - for f in examples/8*.py; do echo "--- $f ---"; uv run python "$f"; done
+
+  run:all-tracks:
+    desc: "Run all example tracks (1-8) sequentially"
+    cmds:
+      - task: run:track1
+      - task: run:track2
+      - task: run:track3
+      - task: run:track4
+      - task: run:track5
+      - task: run:track6
+      - task: run:track7
+      - task: run:track8
+
   # ---------- Test ----------
   test:
     desc: Run tests with pytest

@@ -7,7 +7,7 @@ Demonstrates how to:
   4. Persist the result to a ``.duckdb`` file for later use
 
 Run with:
-    task run:example -- 02_excel_to_duckdb.py
+    uv run python examples/12_excel_to_duckdb.py
 """
 
 from __future__ import annotations

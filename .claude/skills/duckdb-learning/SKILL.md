@@ -34,11 +34,11 @@ Get data in, run your first queries, zero infrastructure.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 01 | Quick-start CSV query | `01_quick_start.py` [DONE] | `duckdb.sql()`, `read_csv()`, `GROUP BY`, `SUM` |
-| 02 | Excel to DuckDB | `02_excel_to_duckdb.py` [DONE] | `INSTALL`/`LOAD excel`, `read_xlsx()`, persistent `.duckdb` file |
-| 03 | Read Parquet files | `03_read_parquet.py` | `read_parquet()`, column pruning, row-group filtering, metadata inspection |
-| 04 | Read JSON files | `04_read_json.py` | `read_json()`, `read_json_auto()`, newline-delimited JSON, nested fields |
-| 05 | Create tables & insert data | `05_create_and_insert.py` | `CREATE TABLE`, `INSERT INTO`, `CREATE TABLE AS`, `DESCRIBE`, data types |
+| 11 | Quick-start CSV query | `11_quick_start.py` [DONE] | `duckdb.sql()`, `read_csv()`, `GROUP BY`, `SUM` |
+| 12 | Excel to DuckDB | `12_excel_to_duckdb.py` [DONE] | `INSTALL`/`LOAD excel`, `read_xlsx()`, persistent `.duckdb` file |
+| 13 | Read Parquet files | `13_read_parquet.py` [DONE] | `read_parquet()`, column pruning, row-group filtering, metadata inspection |
+| 14 | Read JSON files | `14_read_json.py` [DONE] | `read_json()`, `read_json_auto()`, newline-delimited JSON, nested fields |
+| 15 | Create tables & insert data | `15_create_and_insert.py` [DONE] | `CREATE TABLE`, `INSERT INTO`, `CREATE TABLE AS`, `DESCRIBE`, data types |
 
 ### How to build a Foundations example
 
@@ -58,12 +58,12 @@ The everyday SQL toolkit every analyst needs.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 06 | Filtering & sorting | `06_filter_and_sort.py` | `WHERE`, `ORDER BY`, `LIMIT`, `OFFSET`, `BETWEEN`, `IN`, `LIKE` |
-| 07 | Aggregations | `07_aggregations.py` | `GROUP BY`, `HAVING`, `SUM`, `COUNT`, `AVG`, `MIN`, `MAX`, `COUNT(DISTINCT)` |
-| 08 | JOINs | `08_joins.py` | `INNER JOIN`, `LEFT JOIN`, `FULL OUTER`, `CROSS JOIN`, `SEMI JOIN`, `ANTI JOIN` |
-| 09 | Subqueries & CTEs | `09_subqueries_ctes.py` | `WITH` (CTE), scalar subquery, correlated subquery, `EXISTS` |
-| 10 | CASE expressions | `10_case_expressions.py` | `CASE WHEN`, `COALESCE`, `NULLIF`, `IF`, conditional aggregation |
-| 11 | Set operations | `11_set_operations.py` | `UNION`, `UNION ALL`, `INTERSECT`, `EXCEPT` |
+| 21 | Filtering & sorting | `21_filter_and_sort.py` | `WHERE`, `ORDER BY`, `LIMIT`, `OFFSET`, `BETWEEN`, `IN`, `LIKE` |
+| 22 | Aggregations | `22_aggregations.py` | `GROUP BY`, `HAVING`, `SUM`, `COUNT`, `AVG`, `MIN`, `MAX`, `COUNT(DISTINCT)` |
+| 23 | JOINs | `23_joins.py` | `INNER JOIN`, `LEFT JOIN`, `FULL OUTER`, `CROSS JOIN`, `SEMI JOIN`, `ANTI JOIN` |
+| 24 | Subqueries & CTEs | `24_subqueries_ctes.py` | `WITH` (CTE), scalar subquery, correlated subquery, `EXISTS` |
+| 25 | CASE expressions | `25_case_expressions.py` | `CASE WHEN`, `COALESCE`, `NULLIF`, `IF`, conditional aggregation |
+| 26 | Set operations | `26_set_operations.py` | `UNION`, `UNION ALL`, `INTERSECT`, `EXCEPT` |
 
 ### How to build a Core SQL example
 
@@ -83,12 +83,12 @@ Window functions, dates, strings, and DuckDB's unique SQL extensions.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 12 | Window functions -- ranking | `12_window_ranking.py` | `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `NTILE()`, `PARTITION BY` |
-| 13 | Window functions -- aggregates | `13_window_aggregates.py` | Running totals, moving averages, `LAG()`, `LEAD()`, frame clauses (`ROWS BETWEEN`) |
-| 14 | Date & time functions | `14_dates_and_times.py` | `date_trunc`, `date_part`, `date_diff`, `date_add`, `INTERVAL`, `strftime` |
-| 15 | String functions & regex | `15_strings_and_regex.py` | `LIKE`, `ILIKE`, `regexp_matches`, `regexp_extract`, `string_split`, `concat` |
-| 16 | PIVOT & UNPIVOT | `16_pivot_unpivot.py` | `PIVOT ... ON ... USING`, `UNPIVOT`, reshaping data for reporting |
-| 17 | Friendly SQL extensions | `17_friendly_sql.py` | `QUALIFY`, `SAMPLE`, `EXCLUDE`, `REPLACE`, `COLUMNS()`, `GROUP BY ALL`, `ORDER BY ALL` |
+| 31 | Window functions -- ranking | `31_window_ranking.py` | `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `NTILE()`, `PARTITION BY` |
+| 32 | Window functions -- aggregates | `32_window_aggregates.py` | Running totals, moving averages, `LAG()`, `LEAD()`, frame clauses (`ROWS BETWEEN`) |
+| 33 | Date & time functions | `33_dates_and_times.py` | `date_trunc`, `date_part`, `date_diff`, `date_add`, `INTERVAL`, `strftime` |
+| 34 | String functions & regex | `34_strings_and_regex.py` | `LIKE`, `ILIKE`, `regexp_matches`, `regexp_extract`, `string_split`, `concat` |
+| 35 | PIVOT & UNPIVOT | `35_pivot_unpivot.py` | `PIVOT ... ON ... USING`, `UNPIVOT`, reshaping data for reporting |
+| 36 | Friendly SQL extensions | `36_friendly_sql.py` | `QUALIFY`, `SAMPLE`, `EXCLUDE`, `REPLACE`, `COLUMNS()`, `GROUP BY ALL`, `ORDER BY ALL` |
 
 ### How to build an Intermediate SQL example
 
@@ -108,11 +108,11 @@ Moving data between formats and locations.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 18 | Export to CSV & Parquet | `18_export_formats.py` | `COPY ... TO`, `.write_parquet()`, `.write_csv()`, format options |
-| 19 | Multi-file reads (globs) | `19_multi_file_glob.py` | `read_csv('data/*.csv')`, `filename` column, `union_by_name` |
-| 20 | Hive-partitioned data | `20_hive_partitioning.py` | `hive_partitioning = true`, partitioned writes with `PARTITION_BY` |
-| 21 | HTTP & remote files | `21_http_remote.py` | `httpfs` extension, `read_parquet('https://...')`, reading from URLs |
-| 22 | ATTACH & multi-database | `22_attach_databases.py` | `ATTACH`, `DETACH`, `USE`, querying across SQLite/Postgres/DuckDB files |
+| 41 | Export to CSV & Parquet | `41_export_formats.py` | `COPY ... TO`, `.write_parquet()`, `.write_csv()`, format options |
+| 42 | Multi-file reads (globs) | `42_multi_file_glob.py` | `read_csv('data/*.csv')`, `filename` column, `union_by_name` |
+| 43 | Hive-partitioned data | `43_hive_partitioning.py` | `hive_partitioning = true`, partitioned writes with `PARTITION_BY` |
+| 44 | HTTP & remote files | `44_http_remote.py` | `httpfs` extension, `read_parquet('https://...')`, reading from URLs |
+| 45 | ATTACH & multi-database | `45_attach_databases.py` | `ATTACH`, `DETACH`, `USE`, querying across SQLite/Postgres/DuckDB files |
 
 ### How to build a Data I/O example
 
@@ -131,11 +131,11 @@ DuckDB as the SQL engine for your Python data stack.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 23 | pandas interop | `23_pandas_interop.py` | `duckdb.sql("SELECT * FROM df")`, `.df()`, `.fetchdf()`, zero-copy |
-| 24 | polars interop | `24_polars_interop.py` | Query Polars frames with SQL, `.pl()`, LazyFrame integration |
-| 25 | pyarrow interop | `25_pyarrow_interop.py` | `.arrow()`, `.fetchnumpy()`, Arrow tables as virtual DuckDB tables |
-| 26 | Relational API | `26_relational_api.py` | `.filter()`, `.project()`, `.aggregate()`, `.order()`, method chaining |
-| 27 | Python UDFs | `27_python_udfs.py` | `conn.create_function()`, scalar UDF, type mapping, error handling |
+| 51 | pandas interop | `51_pandas_interop.py` | `duckdb.sql("SELECT * FROM df")`, `.df()`, `.fetchdf()`, zero-copy |
+| 52 | polars interop | `52_polars_interop.py` | Query Polars frames with SQL, `.pl()`, LazyFrame integration |
+| 53 | pyarrow interop | `53_pyarrow_interop.py` | `.arrow()`, `.fetchnumpy()`, Arrow tables as virtual DuckDB tables |
+| 54 | Relational API | `54_relational_api.py` | `.filter()`, `.project()`, `.aggregate()`, `.order()`, method chaining |
+| 55 | Python UDFs | `55_python_udfs.py` | `conn.create_function()`, scalar UDF, type mapping, error handling |
 
 ### How to build a Python Interop example
 
@@ -154,12 +154,12 @@ Nested data, full-text search, and DuckDB-specific power features.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 28 | Nested types: STRUCT, LIST, MAP | `28_nested_types.py` | `STRUCT`, `LIST`, `MAP`, `unnest()`, struct access with dot notation |
-| 29 | JSON processing | `29_json_processing.py` | `json_extract`, `json_structure`, `json_transform`, `json_keys`, JSON type |
-| 30 | Recursive CTEs | `30_recursive_ctes.py` | `WITH RECURSIVE`, tree traversal, graph walks, hierarchy flattening |
-| 31 | ASOF joins | `31_asof_joins.py` | `ASOF JOIN ... ON ... AND`, time-series alignment, nearest-match joins |
-| 32 | GROUPING SETS | `32_grouping_sets.py` | `GROUPING SETS`, `ROLLUP`, `CUBE`, `GROUPING()` function, subtotals |
-| 33 | Full-text search | `33_full_text_search.py` | `fts` extension, `PRAGMA create_fts_index`, `fts_main_docs.match_bm25()` |
+| 61 | Nested types: STRUCT, LIST, MAP | `61_nested_types.py` | `STRUCT`, `LIST`, `MAP`, `unnest()`, struct access with dot notation |
+| 62 | JSON processing | `62_json_processing.py` | `json_extract`, `json_structure`, `json_transform`, `json_keys`, JSON type |
+| 63 | Recursive CTEs | `63_recursive_ctes.py` | `WITH RECURSIVE`, tree traversal, graph walks, hierarchy flattening |
+| 64 | ASOF joins | `64_asof_joins.py` | `ASOF JOIN ... ON ... AND`, time-series alignment, nearest-match joins |
+| 65 | GROUPING SETS | `65_grouping_sets.py` | `GROUPING SETS`, `ROLLUP`, `CUBE`, `GROUPING()` function, subtotals |
+| 66 | Full-text search | `66_full_text_search.py` | `fts` extension, `PRAGMA create_fts_index`, `fts_main_docs.match_bm25()` |
 
 ### How to build an Advanced SQL example
 
@@ -180,10 +180,10 @@ Query with DuckDB, chart with Python.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 34 | matplotlib bar & line charts | `34_matplotlib_charts.py` | `.df()` to pandas, `plt.bar()`, `plt.plot()`, `plt.savefig()` |
-| 35 | plotly interactive charts | `35_plotly_charts.py` | `plotly.express`, `.df()`, interactive HTML output, `fig.write_html()` |
-| 36 | seaborn statistical plots | `36_seaborn_plots.py` | `sns.barplot()`, `sns.heatmap()`, `.df()` for seaborn integration |
-| 37 | Chart-ready data with PIVOT | `37_chart_ready_data.py` | `PIVOT` for wide-format, `UNPIVOT` for long-format, export for BI tools |
+| 71 | matplotlib bar & line charts | `71_matplotlib_charts.py` | `.df()` to pandas, `plt.bar()`, `plt.plot()`, `plt.savefig()` |
+| 72 | plotly interactive charts | `72_plotly_charts.py` | `plotly.express`, `.df()`, interactive HTML output, `fig.write_html()` |
+| 73 | seaborn statistical plots | `73_seaborn_plots.py` | `sns.barplot()`, `sns.heatmap()`, `.df()` for seaborn integration |
+| 74 | Chart-ready data with PIVOT | `74_chart_ready_data.py` | `PIVOT` for wide-format, `UNPIVOT` for long-format, export for BI tools |
 
 ### How to build a Visualization example
 
@@ -205,11 +205,11 @@ Patterns you will use on every analytics project.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 38 | ETL pipeline | `38_etl_pipeline.py` | Read mixed sources, transform in SQL, write Parquet, verify output |
-| 39 | Data quality checks | `39_data_quality.py` | `SUMMARIZE`, `NULL` detection, `CHECK` constraints, outlier flagging |
-| 40 | Deduplication | `40_deduplication.py` | `ROW_NUMBER() OVER (...) QUALIFY`, `DISTINCT ON`, duplicate detection |
-| 41 | Synthetic data generation | `41_synthetic_data.py` | `generate_series()`, `range()`, `random()`, `uuid()`, test data creation |
-| 42 | Query profiling | `42_query_profiling.py` | `EXPLAIN`, `EXPLAIN ANALYZE`, `PRAGMA enable_profiling`, reading query plans |
+| 81 | ETL pipeline | `81_etl_pipeline.py` | Read mixed sources, transform in SQL, write Parquet, verify output |
+| 82 | Data quality checks | `82_data_quality.py` | `SUMMARIZE`, `NULL` detection, `CHECK` constraints, outlier flagging |
+| 83 | Deduplication | `83_deduplication.py` | `ROW_NUMBER() OVER (...) QUALIFY`, `DISTINCT ON`, duplicate detection |
+| 84 | Synthetic data generation | `84_synthetic_data.py` | `generate_series()`, `range()`, `random()`, `uuid()`, test data creation |
+| 85 | Query profiling | `85_query_profiling.py` | `EXPLAIN`, `EXPLAIN ANALYZE`, `PRAGMA enable_profiling`, reading query plans |
 
 ### How to build a Real-World Patterns example
 
@@ -237,7 +237,7 @@ Demonstrates how to:
   3. <Third concept>
 
 Run with:
-    task run:example -- NN_script_name.py
+    uv run python examples/NN_script_name.py
 """
 
 from __future__ import annotations

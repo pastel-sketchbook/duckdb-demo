@@ -7,7 +7,7 @@ Demonstrates how to:
   4. Compare Parquet vs CSV for the same data
 
 Run with:
-    task run:example -- 03_read_parquet.py
+    uv run python examples/13_read_parquet.py
 """
 
 from __future__ import annotations

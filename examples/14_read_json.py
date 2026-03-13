@@ -7,7 +7,7 @@ Demonstrates how to:
   4. Filter and aggregate over JSON data
 
 Run with:
-    task run:example -- 04_read_json.py
+    uv run python examples/14_read_json.py
 """
 
 from __future__ import annotations

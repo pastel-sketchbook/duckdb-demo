@@ -37,8 +37,8 @@ src/duckdb_demo/
     sales.csv          # sample sales dataset (CSV)
     inventory.xlsx     # sample inventory dataset (Excel)
 examples/
-  01_quick_start.py    # query a CSV with zero setup
-  02_excel_to_duckdb.py # convert an Excel file to a persistent DuckDB database
+  11_quick_start.py    # query a CSV with zero setup
+  12_excel_to_duckdb.py # convert an Excel file to a persistent DuckDB database
 Taskfile.yml           # task definitions (format, lint, run, test, ...)
 pyproject.toml         # project config, ruff + ty settings
 ```
@@ -51,6 +51,15 @@ Run `task` (or `task --list-all`) to see everything:
 |---|---|
 | `task run` | Auto-fix lint/format, then run the main demo |
 | `task run:example -- <file>` | Run a standalone example script |
+| `task run:track1` | Run all Track 1 — Foundations examples |
+| `task run:track2` | Run all Track 2 — Core SQL examples |
+| `task run:track3` | Run all Track 3 — Intermediate SQL examples |
+| `task run:track4` | Run all Track 4 — Data I/O & Export examples |
+| `task run:track5` | Run all Track 5 — Python Interop examples |
+| `task run:track6` | Run all Track 6 — Advanced SQL examples |
+| `task run:track7` | Run all Track 7 — Visualization examples |
+| `task run:track8` | Run all Track 8 — Real-World Patterns examples |
+| `task run:all-tracks` | Run all example tracks (1-8) sequentially |
 | `task fmt` | Auto-format with ruff |
 | `task fmt:check` | Check formatting (no writes) |
 | `task lint` | Lint + auto-fix with ruff |

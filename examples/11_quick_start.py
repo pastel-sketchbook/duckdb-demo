@@ -1,7 +1,7 @@
 """Quick-start example: query a CSV file with DuckDB -- zero setup required.
 
 Run with:
-    task run:example -- 01_quick_start.py
+    uv run python examples/11_quick_start.py
 """
 
 from __future__ import annotations
