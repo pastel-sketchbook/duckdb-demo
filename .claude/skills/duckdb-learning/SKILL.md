@@ -205,11 +205,11 @@ Patterns you will use on every analytics project.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 81 | ETL pipeline | `81_etl_pipeline.py` | Read mixed sources, transform in SQL, write Parquet, verify output |
-| 82 | Data quality checks | `82_data_quality.py` | `SUMMARIZE`, `NULL` detection, `CHECK` constraints, outlier flagging |
-| 83 | Deduplication | `83_deduplication.py` | `ROW_NUMBER() OVER (...) QUALIFY`, `DISTINCT ON`, duplicate detection |
-| 84 | Synthetic data generation | `84_synthetic_data.py` | `generate_series()`, `range()`, `random()`, `uuid()`, test data creation |
-| 85 | Query profiling | `85_query_profiling.py` | `EXPLAIN`, `EXPLAIN ANALYZE`, `PRAGMA enable_profiling`, reading query plans |
+| 81 | ETL pipeline | `81_etl_pipeline.py` [DONE] | Read mixed sources, transform in SQL, write Parquet, verify output |
+| 82 | Data quality checks | `82_data_quality.py` [DONE] | `SUMMARIZE`, `NULL` detection, `CHECK` constraints, outlier flagging |
+| 83 | Deduplication | `83_deduplication.py` [DONE] | `ROW_NUMBER() OVER (...) QUALIFY`, `DISTINCT ON`, duplicate detection |
+| 84 | Synthetic data generation | `84_synthetic_data.py` [DONE] | `generate_series()`, `range()`, `random()`, `uuid()`, test data creation |
+| 85 | Query profiling | `85_query_profiling.py` [DONE] | `EXPLAIN`, `EXPLAIN ANALYZE`, `PRAGMA enable_profiling`, reading query plans |
 
 ### How to build a Real-World Patterns example
 
@@ -292,7 +292,7 @@ Track 4 - Data I/O & Export .... [5/5]  ██████████
 Track 5 - Python Interop ....... [5/5]  ██████████
 Track 6 - Advanced SQL ......... [6/6]  ██████████
 Track 7 - Visualization ........ [4/4]  ██████████
-Track 8 - Real-World Patterns .. [0/5]  ░░░░░░░░░░
+Track 8 - Real-World Patterns .. [5/5]  ██████████
                                   ─────
-                          Total  37/42
+                          Total  42/42
 ```
