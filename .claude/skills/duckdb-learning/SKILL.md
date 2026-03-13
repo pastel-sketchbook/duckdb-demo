@@ -131,11 +131,11 @@ DuckDB as the SQL engine for your Python data stack.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 51 | pandas interop | `51_pandas_interop.py` | `duckdb.sql("SELECT * FROM df")`, `.df()`, `.fetchdf()`, zero-copy |
-| 52 | polars interop | `52_polars_interop.py` | Query Polars frames with SQL, `.pl()`, LazyFrame integration |
-| 53 | pyarrow interop | `53_pyarrow_interop.py` | `.arrow()`, `.fetchnumpy()`, Arrow tables as virtual DuckDB tables |
-| 54 | Relational API | `54_relational_api.py` | `.filter()`, `.project()`, `.aggregate()`, `.order()`, method chaining |
-| 55 | Python UDFs | `55_python_udfs.py` | `conn.create_function()`, scalar UDF, type mapping, error handling |
+| 51 | pandas interop | `51_pandas_interop.py` [DONE] | `duckdb.sql("SELECT * FROM df")`, `.df()`, `.fetchdf()`, zero-copy |
+| 52 | polars interop | `52_polars_interop.py` [DONE] | Query Polars frames with SQL, `.pl()`, LazyFrame integration |
+| 53 | pyarrow interop | `53_pyarrow_interop.py` [DONE] | `.arrow()`, `.fetchnumpy()`, Arrow tables as virtual DuckDB tables |
+| 54 | Relational API | `54_relational_api.py` [DONE] | `.filter()`, `.project()`, `.aggregate()`, `.order()`, method chaining |
+| 55 | Python UDFs | `55_python_udfs.py` [DONE] | `conn.create_function()`, scalar UDF, type mapping, error handling |
 
 ### How to build a Python Interop example
 
@@ -289,10 +289,10 @@ Track 1 - Foundations ........... [5/5]  ██████████
 Track 2 - Core SQL ............. [6/6]  ██████████
 Track 3 - Intermediate SQL ..... [6/6]  ██████████
 Track 4 - Data I/O & Export .... [5/5]  ██████████
-Track 5 - Python Interop ....... [0/5]  ░░░░░░░░░░
+Track 5 - Python Interop ....... [5/5]  ██████████
 Track 6 - Advanced SQL ......... [0/6]  ░░░░░░░░░░
 Track 7 - Visualization ........ [0/4]  ░░░░░░░░░░
 Track 8 - Real-World Patterns .. [0/5]  ░░░░░░░░░░
                                   ─────
-                          Total  22/42
+                          Total  27/42
 ```
