@@ -1,0 +1,10 @@
+{"id": 1, "name": "Widget", "category": "Hardware", "price": 9.99, "tags": ["basic", "popular"], "specs": {"weight_g": 120, "color": "blue"}}
+{"id": 2, "name": "Widget Pro", "category": "Hardware", "price": 19.99, "tags": ["premium"], "specs": {"weight_g": 150, "color": "silver"}}
+{"id": 3, "name": "Gadget", "category": "Electronics", "price": 24.99, "tags": ["popular", "new"], "specs": {"weight_g": 200, "color": "black"}}
+{"id": 4, "name": "Gadget Mini", "category": "Electronics", "price": 14.99, "tags": ["compact"], "specs": {"weight_g": 90, "color": "white"}}
+{"id": 5, "name": "Gizmo", "category": "Electronics", "price": 49.99, "tags": ["premium", "new"], "specs": {"weight_g": 350, "color": "black"}}
+{"id": 6, "name": "Gizmo Deluxe", "category": "Electronics", "price": 79.99, "tags": ["premium", "limited"], "specs": {"weight_g": 400, "color": "gold"}}
+{"id": 7, "name": "Cable Pack", "category": "Accessories", "price": 4.99, "tags": ["basic", "bundle"], "specs": {"weight_g": 50, "color": "black"}}
+{"id": 8, "name": "Mount Kit", "category": "Hardware", "price": 34.99, "tags": ["popular"], "specs": {"weight_g": 500, "color": "gray"}}
+{"id": 9, "name": "Battery Pack", "category": "Accessories", "price": 7.99, "tags": ["basic", "essential"], "specs": {"weight_g": 80, "color": "green"}}
+{"id": 10, "name": "Sensor", "category": "Electronics", "price": 39.99, "tags": ["new", "advanced"], "specs": {"weight_g": 60, "color": "white"}}

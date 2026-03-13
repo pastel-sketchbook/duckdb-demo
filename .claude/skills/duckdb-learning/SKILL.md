@@ -285,7 +285,7 @@ print("=== Next Section ===")
 Update this section as examples are completed:
 
 ```
-Track 1 - Foundations ........... [2/5]  ██░░░░░░░░
+Track 1 - Foundations ........... [5/5]  ██████████
 Track 2 - Core SQL ............. [0/6]  ░░░░░░░░░░
 Track 3 - Intermediate SQL ..... [0/6]  ░░░░░░░░░░
 Track 4 - Data I/O & Export .... [0/5]  ░░░░░░░░░░
@@ -294,5 +294,5 @@ Track 6 - Advanced SQL ......... [0/6]  ░░░░░░░░░░
 Track 7 - Visualization ........ [0/4]  ░░░░░░░░░░
 Track 8 - Real-World Patterns .. [0/5]  ░░░░░░░░░░
                                   ─────
-                          Total   2/42
+                          Total   5/42
 ```
