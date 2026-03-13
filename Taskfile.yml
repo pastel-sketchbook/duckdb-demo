@@ -79,3 +79,4 @@ tasks:
     cmds:
       - rm -rf .venv __pycache__ .pytest_cache .ruff_cache dist build
       - find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
+      - find . -name '*.duckdb' -o -name '*.duckdb.wal' | xargs rm -f 2>/dev/null || true

@@ -34,9 +34,11 @@ src/duckdb_demo/
   main.py              # CLI runner -- walks through demo queries
   queries.py           # reusable SQL queries and helpers
   data/
-    sales.csv          # sample dataset
+    sales.csv          # sample sales dataset (CSV)
+    inventory.xlsx     # sample inventory dataset (Excel)
 examples/
   01_quick_start.py    # query a CSV with zero setup
+  02_excel_to_duckdb.py # convert an Excel file to a persistent DuckDB database
 Taskfile.yml           # task definitions (format, lint, run, test, ...)
 pyproject.toml         # project config, ruff + ty settings
 ```
@@ -63,6 +65,8 @@ Run `task` (or `task --list-all`) to see everything:
 ## What the demo covers
 
 - Loading CSV files directly into DuckDB (no pandas required)
+- Reading Excel files with DuckDB's `excel` extension (`read_xlsx`)
+- Converting Excel data to a persistent `.duckdb` database
 - Aggregations (`GROUP BY`, `SUM`, `COUNT`)
 - Date functions (`date_trunc`)
 - Window functions (running totals)
@@ -74,6 +78,7 @@ Run `task` (or `task --list-all`) to see everything:
 |---|---|
 | [uv](https://docs.astral.sh/uv/) | Package management, venv, task running |
 | [DuckDB](https://duckdb.org/) | In-process SQL analytics engine |
+| [openpyxl](https://openpyxl.readthedocs.io/) | Excel file support |
 | [ruff](https://docs.astral.sh/ruff/) | Linter + formatter |
 | [ty](https://docs.astral.sh/ty/) | Type checker |
 | [Task](https://taskfile.dev/) | Task runner |
