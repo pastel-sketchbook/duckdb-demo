@@ -108,11 +108,11 @@ Moving data between formats and locations.
 
 | #  | Skill | Example file | Key concepts |
 |----|-------|-------------|--------------|
-| 41 | Export to CSV & Parquet | `41_export_formats.py` | `COPY ... TO`, `.write_parquet()`, `.write_csv()`, format options |
-| 42 | Multi-file reads (globs) | `42_multi_file_glob.py` | `read_csv('data/*.csv')`, `filename` column, `union_by_name` |
-| 43 | Hive-partitioned data | `43_hive_partitioning.py` | `hive_partitioning = true`, partitioned writes with `PARTITION_BY` |
-| 44 | HTTP & remote files | `44_http_remote.py` | `httpfs` extension, `read_parquet('https://...')`, reading from URLs |
-| 45 | ATTACH & multi-database | `45_attach_databases.py` | `ATTACH`, `DETACH`, `USE`, querying across SQLite/Postgres/DuckDB files |
+| 41 | Export to CSV & Parquet | `41_export_formats.py` [DONE] | `COPY ... TO`, `.write_parquet()`, `.write_csv()`, format options |
+| 42 | Multi-file reads (globs) | `42_multi_file_glob.py` [DONE] | `read_csv('data/*.csv')`, `filename` column, `union_by_name` |
+| 43 | Hive-partitioned data | `43_hive_partitioning.py` [DONE] | `hive_partitioning = true`, partitioned writes with `PARTITION_BY` |
+| 44 | HTTP & remote files | `44_http_remote.py` [DONE] | `httpfs` extension, `read_parquet('https://...')`, reading from URLs |
+| 45 | ATTACH & multi-database | `45_attach_databases.py` [DONE] | `ATTACH`, `DETACH`, `USE`, querying across SQLite/Postgres/DuckDB files |
 
 ### How to build a Data I/O example
 
@@ -288,11 +288,11 @@ Update this section as examples are completed:
 Track 1 - Foundations ........... [5/5]  ██████████
 Track 2 - Core SQL ............. [6/6]  ██████████
 Track 3 - Intermediate SQL ..... [6/6]  ██████████
-Track 4 - Data I/O & Export .... [0/5]  ░░░░░░░░░░
+Track 4 - Data I/O & Export .... [5/5]  ██████████
 Track 5 - Python Interop ....... [0/5]  ░░░░░░░░░░
 Track 6 - Advanced SQL ......... [0/6]  ░░░░░░░░░░
 Track 7 - Visualization ........ [0/4]  ░░░░░░░░░░
 Track 8 - Real-World Patterns .. [0/5]  ░░░░░░░░░░
                                   ─────
-                          Total  17/42
+                          Total  22/42
 ```
