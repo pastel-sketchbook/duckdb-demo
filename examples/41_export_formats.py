@@ -110,7 +110,7 @@ conn.execute(
 )
 print(f"\n=== COPY TO JSON (newline-delimited): wrote {json_out.stat().st_size} bytes ===")
 print("First 3 lines:")
-for i, line in enumerate(json_out.read_text().strip().split("\n")[:3]):
+for _i, line in enumerate(json_out.read_text().strip().split("\n")[:3]):
     print(f"  {line}")
 
 # -- 6. Round-trip comparison: CSV vs Parquet file sizes -----------------------

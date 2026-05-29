@@ -98,7 +98,7 @@ numpy_dict = duckdb.sql(
 
 # Each value is a numpy array — great for numerical work.
 for col_name, arr in numpy_dict.items():
-    print(f"  {col_name:>10}: dtype={str(arr.dtype):<10} values={arr.tolist()}")
+    print(f"  {col_name:>10}: dtype={arr.dtype!s:<10} values={arr.tolist()}")
 print()
 
 # =============================================================================

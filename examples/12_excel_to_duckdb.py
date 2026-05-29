@@ -12,7 +12,6 @@ Run with:
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 import duckdb
@@ -24,7 +23,7 @@ DB_FILE = Path(__file__).resolve().parent / "inventory.duckdb"
 
 # Clean up any leftover database from a previous run so the demo is repeatable.
 if DB_FILE.exists():
-    os.remove(DB_FILE)
+    DB_FILE.unlink()
 
 # -- 1. Install & load the Excel extension ------------------------------------
 # DuckDB ships an "excel" community extension.  Installing it once downloads

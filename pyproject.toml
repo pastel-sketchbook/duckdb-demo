@@ -34,7 +34,13 @@ line-length = 100
 target-version = "py310"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP"]
+select = ["E", "F", "I", "UP", "B", "S", "SIM", "PTH", "RUF"]
+ignore = [
+    "S608",   # SQL injection -- acceptable in demos with trusted file paths
+    "S101",   # assert -- acceptable in example scripts for quick validation
+    "RUF001", # ambiguous unicode -- intentional demo data (e.g. curly quotes)
+    "RUF003", # ambiguous unicode in comments
+]
 
 # -- ty (type checker) --------------------------------------------------------
 [tool.ty.environment]

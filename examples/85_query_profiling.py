@@ -376,10 +376,7 @@ def print_operator_tree(node: dict, depth: int = 0) -> None:
     cardinality = node.get("operator_cardinality", "n/a")
 
     # Format timing nicely if it's a float
-    if isinstance(timing, float):
-        timing_str = f"{timing:.6f}s"
-    else:
-        timing_str = str(timing)
+    timing_str = f"{timing:.6f}s" if isinstance(timing, float) else str(timing)
 
     print(f"{indent}{op_name} ({op_type})  rows={cardinality}  time={timing_str}")
 

@@ -11,7 +11,7 @@ Charts are saved to examples/output/ — no interactive window is opened.
 
 Covered plot types:
   - sns.barplot()   — average revenue by product (with error bars)
-  - sns.heatmap()   — customer × product revenue matrix (DuckDB PIVOT)
+  - sns.heatmap()   — customer x product revenue matrix (DuckDB PIVOT)
   - sns.boxplot()   — distribution of order values by product
   - sns.stripplot() — order frequency by customer
   - sns.catplot()   — multi-faceted view across products and customers
